@@ -99,7 +99,7 @@ export function NeloStoreBannerSimulator() {
                 type="file"
                 ref={fileInputRef}
                 onChange={handleFileChange}
-                accept="image/png, image/jpeg, image/webp"
+                accept="image/png, image/jpeg, image/webp, image/jpg"
                 className="hidden"
               />
             </div>
@@ -137,11 +137,11 @@ export function NeloStoreBannerSimulator() {
                     className="absolute top-[48px] left-0 w-full h-[280px] z-10 flex flex-col items-center justify-center group cursor-pointer" 
                     onClick={() => fileInputRef.current?.click()}
                   >
-                    <div className="flex flex-col items-center gap-3 text-white/40 group-hover:text-white/60 transition-all">
-                      <div className="p-4 rounded-full bg-white/5 border border-white/10 group-hover:border-white/20 backdrop-blur-md">
+                    <div className={`flex flex-col items-center gap-3 transition-all ${isDarkMode ? 'text-white/40 group-hover:text-white/60' : 'text-black/40 group-hover:text-black/60'}`}>
+                      <div className={`p-4 rounded-full border backdrop-blur-md transition-all ${isDarkMode ? 'bg-white/5 border-white/10 group-hover:border-white/20' : 'bg-black/5 border-black/10 group-hover:border-black/20'}`}>
                         <UploadCloud size={32} />
                       </div>
-                      <div className="flex flex-col items-center gap-1">
+                      <div className="flex flex-col items-center gap-1 text-center">
                         <span className="font-extrabold text-sm tracking-widest uppercase">O seu banner será aplicado aqui</span>
                         <span className="text-[11px] font-medium opacity-60">Clique aqui ou arraste seu arquivo para testar</span>
                       </div>

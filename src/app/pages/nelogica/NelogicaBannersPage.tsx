@@ -18,7 +18,7 @@ import {
   Gauge
 } from "lucide-react";
 import { Button } from "../../components/Button";
-import { NelogicaBannerSimulator } from "./BannerTestPage";
+import { NelogicaRealisticSimulator } from "./BannerTestPage";
 
 // ─── TOC Items ────────────────────────────────────────────────────────────────
 const TOC_ITEMS = [
@@ -272,7 +272,7 @@ export function NelogicaBannersPage() {
           </div>
         </div>
 
-        <NelogicaBannerSimulator />
+        <NelogicaRealisticSimulator />
 
         {/* ── SEÇÃO: Especificações ─────────────────────────── */}
         <div id="especificacoes" className="flex items-center gap-3 mb-8" style={{ scrollMarginTop: "32px" }}>
