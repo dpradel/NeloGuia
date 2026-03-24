@@ -1,0 +1,7 @@
+node_modules
+node_portable
+dist
+.DS_Store
+*.local
+git_installer.exe
+.env
