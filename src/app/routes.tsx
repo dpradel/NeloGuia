@@ -1,8 +1,12 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { Layout } from "./components/Layout";
 import { HomePage } from "./pages/HomePage";
+
 import { NeloStorePage } from "./pages/nelostore/NeloStorePage";
 import { BannersPage } from "./pages/nelostore/BannersPage";
+import { NeloStoreColorsPage } from "./pages/nelostore/ColorsPage";
+import { NeloStoreComponentsPage } from "./pages/nelostore/ComponentsPage";
+import { NeloStoreLPExamplePage } from "./pages/nelostore/LPExamplePage";
 
 import { NelogicaPage } from "./pages/NelogicaPage";
 import { NelogicaBannersPage } from "./pages/nelogica/NelogicaBannersPage";
@@ -19,6 +23,9 @@ export const router = createBrowserRouter([
         children: [
           { index: true, Component: NeloStorePage },
           { path: "banners", Component: BannersPage },
+          { path: "cores", Component: NeloStoreColorsPage },
+          { path: "componentes", Component: NeloStoreComponentsPage },
+          { path: "lp-exemplo", Component: NeloStoreLPExamplePage },
         ]
       },
       { 
@@ -32,6 +39,8 @@ export const router = createBrowserRouter([
       { path: "*", element: <Navigate to="/" replace /> },
     ],
   },
-]);
+], {
+  basename: import.meta.env.BASE_URL,
+});
 
 
