@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { ChevronLeft, GalleryHorizontal, Palette, LayoutGrid } from "lucide-react";
+import { ChevronLeft, GalleryHorizontal, Palette, LayoutGrid, MousePointer2 } from "lucide-react";
 
 export function NeloStorePage() {
   return (
@@ -49,36 +49,60 @@ export function NeloStorePage() {
           </div>
         </Link>
 
-        {/* Em breve / Outras categorias */}
-        <div className="group relative overflow-hidden rounded-[8px] p-[16px] bg-[#2b2b2b] opacity-60">
+        <Link 
+          to="/nelostore/cores" 
+          className="group relative overflow-hidden rounded-[8px] p-[16px] bg-[#2b2b2b] border border-transparent hover:border-[#5AB0FA]/30 transition-all duration-300"
+        >
           <div className="relative z-10">
-            <div className="w-12 h-12 rounded-[6px] bg-white/5 border border-white/10 flex items-center justify-center text-white/40 mb-6">
+            <div className="w-12 h-12 rounded-[6px] bg-[#5AB0FA]/10 border border-[#5AB0FA]/20 flex items-center justify-center text-[#5AB0FA] mb-6 group-hover:bg-[#5AB0FA]/20 transition-all">
               <Palette size={24} />
             </div>
             <h2 style={{ fontFamily: "'Segoe UI', Tahoma, sans-serif", fontWeight: 600, fontSize: "18px", lineHeight: "24px", color: "white", marginBottom: "8px" }}>Cores e Identidade</h2>
             <p style={{ fontFamily: "'Tahoma', sans-serif", fontWeight: 400, fontSize: "12px", lineHeight: "16px", color: "rgba(255,255,255,0.4)", marginBottom: "24px" }}>
-              Paleta de cores e uso correto da marca na NeloStore.
+              Paleta de cores, gradientes interativos, variáveis CSS e uso correto da marca na loja.
             </p>
-            <span style={{ fontFamily: "'Segoe UI', Tahoma, sans-serif", fontWeight: 600, fontSize: "11px", letterSpacing: "1px", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>
-              Em breve
+            <span style={{ fontFamily: "'Segoe UI', Tahoma, sans-serif", fontWeight: 600, fontSize: "12px" }} className="inline-flex items-center text-[#5AB0FA] group-hover:translate-x-1 transition-transform">
+              Acessar Guia
             </span>
           </div>
-        </div>
+        </Link>
 
-        <div className="group relative overflow-hidden rounded-[8px] p-[16px] bg-[#2b2b2b] opacity-60">
+        <Link 
+          to="/nelostore/componentes" 
+          className="group relative overflow-hidden rounded-[8px] p-[16px] bg-[#2b2b2b] border border-transparent hover:border-[#5AB0FA]/30 transition-all duration-300"
+        >
           <div className="relative z-10">
-            <div className="w-12 h-12 rounded-[6px] bg-white/5 border border-white/10 flex items-center justify-center text-white/40 mb-6">
+            <div className="w-12 h-12 rounded-[6px] bg-[#5AB0FA]/10 border border-[#5AB0FA]/20 flex items-center justify-center text-[#5AB0FA] mb-6 group-hover:bg-[#5AB0FA]/20 transition-all">
               <LayoutGrid size={24} />
             </div>
             <h2 style={{ fontFamily: "'Segoe UI', Tahoma, sans-serif", fontWeight: 600, fontSize: "18px", lineHeight: "24px", color: "white", marginBottom: "8px" }}>Componentes</h2>
             <p style={{ fontFamily: "'Tahoma', sans-serif", fontWeight: 400, fontSize: "12px", lineHeight: "16px", color: "rgba(255,255,255,0.4)", marginBottom: "24px" }}>
-              Cards de produto, selos, botões e navegação estruturada.
+              Cards de produto, selos, botões interativos e estrutura DOM baseada nestes estilos.
             </p>
-            <span style={{ fontFamily: "'Segoe UI', Tahoma, sans-serif", fontWeight: 600, fontSize: "11px", letterSpacing: "1px", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>
-              Em breve
+            <span style={{ fontFamily: "'Segoe UI', Tahoma, sans-serif", fontWeight: 600, fontSize: "12px" }} className="inline-flex items-center text-[#5AB0FA] group-hover:translate-x-1 transition-transform">
+              Acessar Guia
             </span>
           </div>
-        </div>
+        </Link>
+
+        {/* Exemplo LP */}
+        <Link 
+          to="/nelostore/lp-exemplo" 
+          className="group relative overflow-hidden rounded-[8px] p-[16px] bg-[#2b2b2b] border border-transparent hover:border-emerald-500/30 transition-all duration-300"
+        >
+          <div className="relative z-10">
+            <div className="w-12 h-12 rounded-[6px] bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 mb-6 group-hover:bg-emerald-500/20 transition-all">
+              <MousePointer2 size={24} />
+            </div>
+            <h2 style={{ fontFamily: "'Segoe UI', Tahoma, sans-serif", fontWeight: 600, fontSize: "18px", lineHeight: "24px", color: "white", marginBottom: "8px" }}>Exemplo Prático (LP)</h2>
+            <p style={{ fontFamily: "'Tahoma', sans-serif", fontWeight: 400, fontSize: "12px", lineHeight: "16px", color: "rgba(255,255,255,0.4)", marginBottom: "24px" }}>
+              Demonstração ao vivo de todas as cores e componentes aplicados a construção de uma Landing Page real da NeloStore.
+            </p>
+            <span style={{ fontFamily: "'Segoe UI', Tahoma, sans-serif", fontWeight: 600, fontSize: "12px" }} className="inline-flex items-center text-emerald-500 group-hover:translate-x-1 transition-transform">
+              Ver Demonstração
+            </span>
+          </div>
+        </Link>
       </div>
     </div>
   );

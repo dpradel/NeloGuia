@@ -1,3 +1,4 @@
+import React from "react";
 import clsx from "clsx";
 import svgPaths from "./svg-yt54lsksqc";
 
@@ -206,20 +207,20 @@ function BackgroundImage3({ children }: React.PropsWithChildren<{}>) {
   );
 }
 
-function BackgroundImage2({ children }: React.PropsWithChildren<{}>) {
+function BackgroundImage1({ children }: React.PropsWithChildren<{}>) {
   return (
-    <div style={{ "--transform-inner-width": "1185", "--transform-inner-height": "105" } as React.CSSProperties} className="flex h-[70px] items-center justify-center relative shrink-0 w-[59px]">
-      <div className="-rotate-90 flex-none">
+    <div className="flex h-[70px] items-center justify-center relative shrink-0 w-full">
+      <div className="flex-none">
         <BackgroundImage>{children}</BackgroundImage>
       </div>
     </div>
   );
 }
 
-function BackgroundImage1({ children }: React.PropsWithChildren<{}>) {
+function BackgroundImage2({ children }: React.PropsWithChildren<{}>) {
   return (
-    <div style={{ "--transform-inner-width": "1185", "--transform-inner-height": "126" } as React.CSSProperties} className="flex h-[70px] items-center justify-center relative shrink-0 w-[59px]">
-      <div className="-rotate-90 flex-none">
+    <div className="flex h-[70px] items-center justify-center relative shrink-0 w-full">
+      <div className="flex-none">
         <BackgroundImage>{children}</BackgroundImage>
       </div>
     </div>
@@ -1010,14 +1011,14 @@ export default function NavSideMenu() {
   return (
     <div className="bg-[rgba(33,33,33,0.8)] relative size-full" data-name="nav-sideMenu">
       <div aria-hidden="true" className="absolute border-[#414141] border-r border-solid inset-0 pointer-events-none" />
-      <div className="content-stretch flex flex-col items-start pt-[48px] px-px relative size-full">
-        <div className="flex flex-[1_0_0] items-center justify-center min-h-px min-w-px relative w-full" style={{ "--transform-inner-width": "1185", "--transform-inner-height": "1237" } as React.CSSProperties}>
-          <div className="flex-none rotate-90 size-full">
+      <div className="content-stretch flex flex-col items-start px-px relative size-full">
+        <div className="flex flex-[1_0_0] items-start justify-center min-h-px min-w-px relative w-full">
+          <div className="flex-none size-full">
             <div className="relative size-full" data-name="nav-sideMenu-tabList">
               <div className="overflow-clip rounded-[inherit] size-full">
-                <div className="content-start flex flex-wrap gap-0 items-start relative size-full">
-                  <div className="flex h-[70px] items-center justify-center relative shrink-0 w-[59px]" style={{ "--transform-inner-width": "1185", "--transform-inner-height": "61" } as React.CSSProperties}>
-                    <div className="-rotate-90 flex-none">
+                <div className="content-start flex flex-col gap-0 items-center relative size-full">
+                  <div className="flex h-[70px] items-center justify-center relative shrink-0 w-full">
+                    <div className="flex-none">
                       <BackgroundImage8 additionalClassNames="bg-[rgba(243,245,249,0.1)]">
                         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-center justify-center min-h-px min-w-px py-[11px] relative" data-name="navigation-tab-desktop">
                           <div className="relative shrink-0 size-[20px]" data-name="container-ic">
@@ -1102,8 +1103,8 @@ export default function NavSideMenu() {
                       <p className="leading-[11px] overflow-hidden">Plataformas</p>
                     </div>
                   </BackgroundImage1>
-                  <div className="flex h-[70px] items-center justify-center relative shrink-0 w-[59px]" style={{ "--transform-inner-width": "1185", "--transform-inner-height": "147" } as React.CSSProperties}>
-                    <div className="-rotate-90 flex-none">
+                  <div className="flex h-[70px] items-center justify-center relative shrink-0 w-full">
+                    <div className="flex-none">
                       <BackgroundImage>
                         <div className="relative shrink-0 size-[20px]" data-name="container-ic">
                           <NavSideMenuContainerIcOffBackgroundImage7 additionalClassNames="left-0 top-0" />
@@ -1115,8 +1116,8 @@ export default function NavSideMenu() {
                       </BackgroundImage>
                     </div>
                   </div>
-                  <div className="flex h-[70px] items-center justify-center relative shrink-0 w-[59px]" style={{ "--transform-inner-width": "1185", "--transform-inner-height": "168" } as React.CSSProperties}>
-                    <div className="-rotate-90 flex-none">
+                  <div className="flex h-[70px] items-center justify-center relative shrink-0 w-full">
+                    <div className="flex-none">
                       <BackgroundImage>
                         <div className="relative shrink-0 size-[20px]" data-name="container-ic">
                           <NavSideMenuContainerIcOffBackgroundImage8 additionalClassNames="left-0 top-0" />
@@ -1128,8 +1129,8 @@ export default function NavSideMenu() {
                       </BackgroundImage>
                     </div>
                   </div>
-                  <div className="flex h-[70px] items-center justify-center relative shrink-0 w-[59px]" style={{ "--transform-inner-width": "1185", "--transform-inner-height": "84" } as React.CSSProperties}>
-                    <div className="-rotate-90 flex-none">
+                  <div className="flex h-[70px] items-center justify-center relative shrink-0 w-full">
+                    <div className="flex-none">
                       <BackgroundImage>
                         <div className="relative shrink-0 size-[20px]" data-name="container-ic">
                           <NavSideMenuContainerIcOffBackgroundImage9 additionalClassNames="left-0 top-0" />

@@ -17,8 +17,9 @@ const navItems = [
     children: [
       { name: 'Visão Geral', path: '/nelostore', icon: <Compass size={16} />, description: 'Resumo da marca' },
       { name: 'Banners', path: '/nelostore/banners', icon: <ShoppingBag size={16} />, description: 'Guia de marketing' },
-      { name: 'Cores', path: '/nelostore/cores', icon: <Palette size={16} />, description: 'Paletas e contrastes', disabled: true },
-      { name: 'Componentes', path: '/nelostore/componentes', icon: <LayoutTemplate size={16} />, description: 'Biblioteca UI', disabled: true },
+      { name: 'Cores', path: '/nelostore/cores', icon: <Palette size={16} />, description: 'Paletas e contrastes' },
+      { name: 'Componentes', path: '/nelostore/componentes', icon: <LayoutTemplate size={16} />, description: 'Biblioteca UI' },
+      { name: 'Exemplo Prático (LP)', path: '/nelostore/lp-exemplo', icon: <Target size={16} />, description: 'Simulador de Landing Page' },
     ]
   },
   {
